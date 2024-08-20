@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import FemaleAvatar from "@/public/female-avatar.svg";
+import Image from "next/image";
 
 interface ColorResult {
   id: number;
@@ -18,14 +20,19 @@ const result: ColorResult[] = [
   {
     id: 1,
     title: "Red",
-    content: "Texto vindo do prompt",
+    content: "Prompt message will be generated here...",
     color: "#FF5733",
   },
-  { id: 2, title: "Green", content: "Texto vindo do prompt", color: "#33FF57" },
+  {
+    id: 2,
+    title: "Green",
+    content: "Prompt message will be generated here...",
+    color: "#33FF57",
+  },
   {
     id: 3,
     title: "Baby Blue",
-    content: "Texto vindo do prompt",
+    content: "Prompt message will be generated here...",
     color: "#7d92f3",
   },
 ];
@@ -51,7 +58,15 @@ const Result = () => {
         <span>These are the colors that suits you best!</span>
       </div>
       <div className="flex flex-col gap-8 items-center">
-        <div className="border border-gray-300 w-64 h-64 rounded-md shadow-md"></div>
+        <div className="flex items-center justify-center border border-gray-300 w-64 h-64 rounded-md shadow-md">
+          <Image
+            src={FemaleAvatar}
+            alt="Female Avatar svg"
+            className="md:w-[200px] "
+            width={200}
+            height={200}
+          />
+        </div>
         <div className="flex">
           <ul className="flex gap-4">
             {result.map((item) => (
