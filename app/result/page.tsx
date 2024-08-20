@@ -45,7 +45,7 @@ const Result = () => {
   };
   return (
     <main className="flex min-h-screen flex-col items-center justify-evenly p-12">
-      <div className="absolut w-full -ml-20 -mt-12 mb-4 ">
+      <div className="absolut w-full -ml-20 -mt-6 mb-4 ">
         <Link href="/">
           {" "}
           <Button variant="link" className="gap-2">
