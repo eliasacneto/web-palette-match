@@ -54,8 +54,8 @@ const Result = () => {
         </Link>
       </div>
       <div className="text-center">
-        <h1 className="font-bold text-xl">Welcome to Palette Match</h1>
-        <span>These are the colors that suits you best!</span>
+        <h1 className="font-bold text-xl">The colors that suits you best,</h1>
+        <span>based on Palette Match!</span>
       </div>
       <div className="flex flex-col gap-8 items-center">
         <div className="flex items-center justify-center border border-gray-300 w-64 h-64 rounded-md shadow-md">
