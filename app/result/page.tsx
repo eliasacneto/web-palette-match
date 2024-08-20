@@ -37,7 +37,7 @@ const Result = () => {
     setSelectedColorId(selectedColorId === id ? null : id);
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-evenly p-12">
       <div className="fixed top-5 left-4 ">
         <Link href="/">
           {" "}
@@ -48,7 +48,7 @@ const Result = () => {
       </div>
       <div className="text-center">
         <h1 className="font-bold text-xl">Welcome to Palette Match</h1>
-        <span>These are the colors that suits you best</span>
+        <span>These are the colors that suits you best!</span>
       </div>
       <div className="flex flex-col gap-8 items-center">
         <div className="border border-gray-300 w-64 h-64 rounded-md shadow-md"></div>
@@ -82,7 +82,7 @@ const Result = () => {
         )}
       </div>
 
-      <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center gap-3">
         <Label htmlFor="picture" className="text-gray-400">
           Did you like the result?
         </Label>
